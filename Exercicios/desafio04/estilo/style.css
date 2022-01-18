@@ -55,18 +55,37 @@ section{
     padding-left: 30px;
 }
 
+section > p{
+    padding-bottom: 2em;
+}
+
 section.normal{
     background-color: white;
 }
 
 section.imagem{
     background-color: violet;
+    color: white;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right bottom;
+}
+
+section#img02{
+    background-image: url('../imagens/background002.jpg');
+    background-position: center center;
 }
 
 section.imagem > p{
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.342);
     max-width: 350px;
+    border-radius: 10px;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 
 
