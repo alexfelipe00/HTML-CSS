@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        table{
+            margin: auto;
+            width: 400px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        thead{
+            background-color: rgb(201, 211, 221);
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(201, 211, 221);
+            border: 1px solid black;
+        }
+
+        tbody > tr:nth-child(odd){      background-color: white;
+;
+        }
+
+        tbody > tr:nth-child(even){
+            background-color: lightgrey;
+        }
+
+        tfoot{
+            background-color: lightblue;
+        }
+        tr, td, th{
+            padding: 5px;
+            border: 1px solid black;
+        }
+
+        td.num{
+            text-align: right;
+        }
+
+        caption{
+            font-size: larger;
+            font-weight: bolder;
+            background-color: antiquewhite;
+            border-radius: 10px 10px 0px 0px;
+            border: 1px solid rgb(0, 0, 0);
+        }
+
+        body > p{
+            font-size: 1.3em;
+        }
+    </style>
+</head>
+<body>
+    <!-- ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT 
+                TR, TD, TH 
+    -->
+
+    <table>
+        <caption>
+            <p>População de cada região do Brasil</p>
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Capital</th>
+                <th scope="col">População</th>
+            </tr>
+
+        </thead>
+            
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">12.325.232</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">6.747.815</td>
+            </tr>
+            <tr>
+                <td>Brasília</td>
+                <td class="num">3.055.149</td>
+            </tr>
+            <tr>
+                <td>Salvador</td>
+                <td class="num">2.886.698</td>
+            </tr>
+            <tr>
+                <td>Fortaleza</td>
+                <td class="num">2.686.612</td>
+            </tr>
+            <tr>
+                <td>Belo Horizonte</td>
+                <td class="num">2.521.564</td>
+            </tr>
+            <tr>
+                <td>Manaus</td>
+                <td class="num">2.219.580</td>
+            </tr>
+            <tr>
+                <td>Curitiba</td>
+                <td class="num">1.948.626</td>
+            </tr>
+            <tr>
+                <td>Recife</td>
+                <td class="num">1.653.461</td>
+            </tr
+            ><tr>
+                <td>Goiânia</td>
+                <td class="num">1.536.097</td>
+            </tr>
+            <tr>
+                <td>Porto Alegre</td>
+                <td class="num">1.488.252</td>
+            </tr>
+            <tr>
+                <td>São Luis</td>
+                <td class="num">1.108.975</td>
+            </tr>
+            <tr>
+                <td>Maceió</td>
+                <td class="num">1.025.360</td>
+            </tr>
+            <tr>
+                <td>Campo Grande</td>
+                <td class="num">906.092	</td>
+            </tr>
+            <tr>
+                <td>Natal</td>
+                <td class="num">890.480</td>
+            </tr>
+            <tr>
+                <td>João Pessoa</td>
+                <td class="num">817.511</td>
+            </tr>
+            <tr>
+                <td>Aracaju</td>
+                <td class="num">664.908</td>
+            </tr>
+            <tr>
+                <td>Cuiabá</td>
+                <td class="num">618.124</td>
+            </tr>
+            <tr>
+                <td>Porto Velho</td>
+                <td class="num">539.354</td>
+            </tr>
+            <tr>
+                <td>Macapá</td>
+                <td class="num">512.902</td>
+            </tr>
+            <tr>
+                <td>Florianópolis</td>
+                <td class="num">508.826</td>
+            </tr>
+            <tr>
+                <td>Boa Vista</td>
+                <td class="num">419.652</td>
+            </tr>
+            <tr>
+                <td>Rio Branco</td>
+                <td class="num">413.418</td>
+            </tr>
+            <tr>
+                <td>Vitória</td>
+                <td class="num">365.855</td>
+            </tr>
+            <tr>
+                <td>Palmas</td>
+                <td class="num">306.296</td>
+            </tr><tr>
+            
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Brasil</th>
+                <td class="num"><strong>207.660.929</strong> </td>
+            </tr>
+        </tfoot>
+    </table>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quas? Temporibus, aperiam facere architecto debitis sunt eius officiis quidem ullam at praesentium magni eligendi? Commodi ipsum quibusdam error unde voluptatibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, pariatur porro nesciunt quas soluta eius sapiente inventore consectetur a nulla tempore nemo illo alias fugit suscipit repellat quis dignissimos mollitia.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quas? Temporibus, aperiam facere architecto debitis sunt eius officiis quidem ullam at praesentium magni eligendi? Commodi ipsum quibusdam error unde voluptatibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, pariatur porro nesciunt quas soluta eius sapiente inventore consectetur a nulla tempore nemo illo alias fugit suscipit repellat quis dignissimos mollitia.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quas? Temporibus, aperiam facere architecto debitis sunt eius officiis quidem ullam at praesentium magni eligendi? Commodi ipsum quibusdam error unde voluptatibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, pariatur porro nesciunt quas soluta eius sapiente inventore consectetur a nulla tempore nemo illo alias fugit suscipit repellat quis dignissimos mollitia.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quas? Temporibus, aperiam facere architecto debitis sunt eius officiis quidem ullam at praesentium magni eligendi? Commodi ipsum quibusdam error unde voluptatibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, pariatur porro nesciunt quas soluta eius sapiente inventore consectetur a nulla tempore nemo illo alias fugit suscipit repellat quis dignissimos mollitia.</p>
+
+</body>
+</html>
