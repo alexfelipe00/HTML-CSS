@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        table{
+            width: 400px;
+            border-collapse: collapse;
+            border-radius: 5px;
+        }
+
+        thead{
+            background-color: rgb(201, 211, 221);
+        }
+        tfoot{
+            background-color: lightblue;
+        }
+        tr, td, th{
+            padding: 5px;
+            border: 1px solid black;
+        }
+
+        td.num{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <!-- ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT 
+                TR, TD, TH 
+    -->
+
+    <table>
+        <thead>
+            <tr>
+                <th>Região</th>
+                <th>População</th>
+            </tr>
+
+        </thead>
+            
+        <tbody>
+            <tr>
+                <td>Região Norte</td>
+                <td class="num">17.936.201</td>
+            </tr>
+            <tr>
+                <td>Região Nordeste</td>
+                <td class="num">57.254.159</td>
+            </tr>
+            <tr>
+                <td>Região Centro-Oeste</td>
+                <td class="num">15.875.907</td>
+            </tr>
+            <tr>
+                <td>Região Sudeste</td>
+                <td class="num">86.949.714</td>
+            </tr>
+            <tr>
+                <td>Região Sul</td>
+                <td class="num">29.644.948</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>Brasil</th>
+                <td class="num"><strong>207.660.929</strong> </td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
